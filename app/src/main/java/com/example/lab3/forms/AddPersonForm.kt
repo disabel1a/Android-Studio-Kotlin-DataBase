@@ -20,7 +20,7 @@ class AddPersonForm(context: Context, private val listener: OnFormSubmitButtonLi
             val surname = binding.surnameField.text.toString()
             val patronymic = binding.patronymicField.text.toString()
             val spec = binding.specField.text.toString()
-            listener.onSubmit(Person(name, surname, patronymic, spec))
+            listener.onSubmit(name, surname, patronymic, spec)
             dismiss()
         }
     }

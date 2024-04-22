@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import com.example.lab3.Person
 import com.example.lab3.databinding.AddPersonFormBinding
 
-class EditPersonForm (private val person: Person, context: Context, private val listener: OnFormSubmitButtonListener) : Dialog(context){
+class EditPersonForm (private val person: Person, context: Context, private val listener: OnEditButtonListener) : Dialog(context){
     private lateinit var binding: AddPersonFormBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
